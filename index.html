@@ -5,11 +5,67 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather Dashboard</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
+    <header class="bg-dark text-center">
+        <h1>Weather Dashboard</h1>
+    </header>
     <main>
+        <div class="container"></div>
+        <aside class="sidebar">
+            <div class="col-12" id="todaysforecast"></div>
+            <aside class="col-12"></aside>
+                    <h4>Search a City</h4>
+                    <div class="input-group mb3"></div>
+                    <input type="text" class="form-control" placeholder="city name" id="userInput"
+                    aria-label=""
+                    aria-describedby="button-addon2">
+                    <button type="submit" class="btn search-btn">Search</button>
+                </div>
+            </div>
+        </div>
+                    <h2>Today's Weather</h2>
+                    <div class="current-weather" id="current-weather"></div>
+        <div class="row">
+            <h3>Five Day Weather Forecast</h3>
+         </form>
 
+            <div
+            class="five-day-forecast row justify-content-around"
+            id="five-day-forecast"></div>
+            <section id="forecast"></section>
+            <section id="search-history"></section>
+            <h2>Search History</h2>
+            <div class="container">
+                <div class="row">
+                    <div id="past-searches">
+                        <div class="button-wrapper"></div>
+                        <div class="col-9">
+                            <div class="row hide" id="currentCity">
+                                <h3 id="currentCityInfo"><img id="weatherImage"><img></h3>
+                                <p id="currentTemp"></p>
+                                <p id="currentHumid"></p>
+                                <p id="currentWind"></p>
+                                <p id="currentUvi"></p>
+                            </div>
+                            <div class="row hide" id="forecast">
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+              
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>      
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.7/dayjs.min.js"></script> -->
         <script src="./assets/script.js"></script>
-        </main>
+        
 </body>
 </html>
